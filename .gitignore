@@ -1,0 +1,7 @@
+.DS_Store
+.cache/
+elpa/
+forge-database.sqlite
+projectile-bookmarks.eld
+recentf
+transient/
