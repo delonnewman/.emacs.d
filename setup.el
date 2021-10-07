@@ -6,39 +6,67 @@
 (package-refresh-contents)
 
 (defvar drn-packages
-  '(evil
-    smartparens
+  '(
+    ;; Editor ext.
+    evil
     diminish
     dashboard
     all-the-icons
-    magit
     org
-    flycheck
-    company
-    company-box
     ivy
     editorconfig
     projectile
-    guru-mode
-    magit
-    forge
-    which-key
     exec-path-from-shell
-    ag
     undo-tree
-    hl-todo
-    js2-mode
-    rainbow-delimiters
-    rainbow-mode
-    clojure-mode
-    cider
+    ag
+
+    ;; Help
+    guru-mode
+    which-key
+
+    ;; Programming
     lsp-mode
     lsp-ui
+    rainbow-delimiters
+    rainbow-mode
+    smartparens
+    hl-todo
+    flycheck
+    company
+    company-box
+
+    ;; Git
+    magit
+    forge
+
+    ;; Clojure
+    clojure-mode
+    cider
+
+    ;; Scheme
+    giser
+
+    ;; CommonLisp
+    slime
+
+    ;; Ruby
     yari
     inf-ruby
+
+    ;; Web Dev
     web-mode
+
+    ;; JavaScript
     tide
-    ))
+    js2-mode
+    skewer-mode
+
+    ;; Julia
+    julia-mode
+    julia-snail
+    julia-repl
+    )
+  )
 
 (dolist (pkg drn-packages)
   (package-install pkg))

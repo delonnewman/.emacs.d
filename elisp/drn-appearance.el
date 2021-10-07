@@ -19,4 +19,4 @@
 
 (when window-system (set-frame-size (selected-frame) 120 80))
 
-(provide 'appearance)
+(provide 'drn-appearance)

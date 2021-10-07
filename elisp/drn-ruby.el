@@ -14,4 +14,4 @@
 
   (add-hook 'ruby-mode-hook (lambda () (run-hooks 'drn-ruby-mode-defauls))))
 
-(provide 'ruby)
+(provide 'drn-ruby)

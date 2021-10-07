@@ -1,18 +1,20 @@
 ;; Add elisp dir
 (add-to-list 'load-path "~/.emacs.d/elisp")
 
-(require 'appearance)
-(require 'core)
-(require 'editor)
-(require 'dashboard-config)
+(require 'drn-appearance)
+(require 'drn-core)
+(require 'drn-editor)
+(require 'drn-dashboard)
 
-(require 'git)
-(require 'programming)
+(require 'drn-git)
+(require 'drn-programming)
 
 ;; TODO: autoload based on project
-(require 'javascript)
-(require 'ruby)
-(require 'clojure)
+(require 'drn-javascript)
+(require 'drn-ruby)
+(require 'drn-clojure)
+
+(server-start) ; start emacs service
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.

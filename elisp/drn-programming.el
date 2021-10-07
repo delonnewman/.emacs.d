@@ -12,4 +12,4 @@
 ;; Configure path to recogize asdf-vm paths
 (asdf-vm-init)
 
-(provide 'programming)
+(provide 'drn-programming)

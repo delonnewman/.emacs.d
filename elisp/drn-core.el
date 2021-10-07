@@ -12,7 +12,11 @@
 ;; Projectile
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
-(setq projectile-project-search-path '("~/Projects/Personal", "~/Projects/Business", "~/Projects/Clients", "~/Projects/Open", "~/Projects/Theocratic"))
+(setq projectile-project-search-path '("~/Projects/Personal"
+                                       "~/Projects/Business"
+                                       "~/Projects/Clients"
+                                       "~/Projects/Open"
+                                       "~/Projects/Theocratic"))
 (setq projectile-completion-system 'ivy)
 (setq projectile-dynamic-mode-line t)
 
@@ -55,4 +59,4 @@
 (when (fboundp 'set-fontset-font)
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend))
 
-(provide 'core)
+(provide 'drn-core)

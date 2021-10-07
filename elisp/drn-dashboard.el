@@ -39,4 +39,4 @@
 
 (dashboard-setup-startup-hook)
 
-(provide 'dashboard-config)
+(provide 'drn-dashboard)

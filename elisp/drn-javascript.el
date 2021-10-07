@@ -31,4 +31,4 @@
 
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
-(provide 'javascript)
+(provide 'drn-javascript)
