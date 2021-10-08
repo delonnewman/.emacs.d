@@ -44,7 +44,7 @@
     cider
 
     ;; Scheme
-    giser
+    geiser
 
     ;; CommonLisp
     slime
@@ -61,10 +61,8 @@
     js2-mode
     skewer-mode
 
-    ;; Julia
-    julia-mode
-    julia-snail
-    julia-repl
+    ;; APL
+    ;gnu-apl-mode
     )
   )
 
