@@ -14,7 +14,9 @@
 (require 'drn-ruby)
 (require 'drn-clojure)
 
-(server-start) ; start emacs service
+(require 'server)
+(unless (server-running-p)
+  (server-start))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -32,3 +34,4 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+(put 'dired-find-alternate-file 'disabled nil)
