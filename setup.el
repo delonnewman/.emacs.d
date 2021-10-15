@@ -49,6 +49,9 @@
     ;; CommonLisp
     slime
 
+    ;; APL
+    gnu-apl-mode
+
     ;; Ruby
     yari
     inf-ruby
