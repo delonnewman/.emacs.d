@@ -9,7 +9,9 @@
 (require 'drn-git)
 (require 'drn-programming)
 
-;; TODO: autoload based on project
+(require 'drn-yaml)
+(require 'drn-sql)
+
 (require 'drn-javascript)
 (require 'drn-ruby)
 (require 'drn-clojure)

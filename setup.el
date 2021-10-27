@@ -35,6 +35,9 @@
     company
     company-box
 
+    ;; Services / devops
+    docker
+
     ;; Git
     magit
     forge
@@ -49,9 +52,6 @@
     ;; CommonLisp
     slime
 
-    ;; APL
-    gnu-apl-mode
-
     ;; Ruby
     yari
     inf-ruby
@@ -63,9 +63,6 @@
     tide
     js2-mode
     skewer-mode
-
-    ;; APL
-    ;gnu-apl-mode
     )
   )
 
