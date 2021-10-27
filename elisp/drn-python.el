@@ -1,6 +1,9 @@
 (require 'elpy)
 
-(elpy-enable)
+(defun drn-init-python-mode ()
+  (elpy-enable))
+
+(add-hook 'python-mode-hook #'drn-init-python-mode)
 
 ;; Enable Flycheck
 (when (require 'flycheck nil t)
