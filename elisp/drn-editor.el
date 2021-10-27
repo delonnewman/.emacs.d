@@ -1,6 +1,6 @@
 ;;; editor.el --- Editor enhancements
 
-;; Much as been blatantly stolen from prelude (https://github.com/bbatsov/prelude)
+;; Much has been blatantly stolen from prelude (https://github.com/bbatsov/prelude)
 
 ;;; Code:
 

@@ -14,4 +14,7 @@
 
   (add-hook 'ruby-mode-hook (lambda () (run-hooks 'drn-ruby-mode-defauls))))
 
+(add-hook 'ruby-mode-hook 'yard-mode)
+(add-hook 'ruby-mode-hook 'eldoc-mode)
+
 (provide 'drn-ruby)

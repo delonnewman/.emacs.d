@@ -46,15 +46,16 @@
     clojure-mode
     cider
 
+    ;; Common Lisp
+    slime
+
     ;; Scheme
     geiser
-
-    ;; CommonLisp
-    slime
 
     ;; Ruby
     yari
     inf-ruby
+    yard-mode
 
     ;; Web Dev
     web-mode
@@ -63,6 +64,12 @@
     tide
     js2-mode
     skewer-mode
+
+    ;; Julia
+    julia-mode
+
+    ;; Python
+    elpy
     )
   )
 

@@ -9,12 +9,14 @@
 (require 'drn-git)
 (require 'drn-programming)
 
+(require 'drn-docker)
 (require 'drn-yaml)
 (require 'drn-sql)
 
-(require 'drn-javascript)
-(require 'drn-ruby)
 (require 'drn-clojure)
+(require 'drn-ruby)
+(require 'drn-python)
+(require 'drn-javascript)
 
 (require 'server)
 (unless (server-running-p)
