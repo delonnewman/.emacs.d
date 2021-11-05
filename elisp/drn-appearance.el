@@ -1,4 +1,5 @@
 (require 'fira-code-mode)
+;(require 'color-theme-buffer-local)
 
 ;; font
 (set-face-attribute 'default nil :font "Fira Code-15")
@@ -7,9 +8,11 @@
 ;; add theme directory to load path
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
 
-(load-theme 'nord t)
+(defvar drn-theme 'alabaster)
+
+(load-theme drn-theme t)
 (set-frame-parameter nil 'background-mode 'dark)
-(enable-theme 'nord)
+(enable-theme drn-theme)
 
 ;; Show line numbers
 (global-linum-mode)
@@ -18,5 +21,8 @@
 (tool-bar-mode -1)
 
 (when window-system (set-frame-size (selected-frame) 120 80))
+
+;(add-hook 'term-mode-hook
+;          (lambda () (color-theme-buffer-local drn-theme (current-buffer))))
 
 (provide 'drn-appearance)
