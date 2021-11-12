@@ -27,6 +27,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("b30ab3b30e70f4350dad6bfe27366d573ace2190cc405c619bd5e602110c6e0c" default))
  '(package-selected-packages '(magit all-the-icons dashboard smartparens evil diminish))
  '(safe-local-variable-values
    '((projectile-globally-ignored-files "*.map"

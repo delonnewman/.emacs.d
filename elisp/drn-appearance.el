@@ -1,4 +1,5 @@
 (require 'fira-code-mode)
+(require 'ns-auto-titlebar)
 ;(require 'color-theme-buffer-local)
 
 ;; font
@@ -8,7 +9,7 @@
 ;; add theme directory to load path
 (add-to-list 'custom-theme-load-path (expand-file-name "~/.emacs.d/themes/"))
 
-(defvar drn-theme 'alabaster)
+(defvar drn-theme 'nord)
 
 (load-theme drn-theme t)
 (set-frame-parameter nil 'background-mode 'dark)
@@ -21,6 +22,8 @@
 (tool-bar-mode -1)
 
 (when window-system (set-frame-size (selected-frame) 120 80))
+
+(when (eq system-type 'darwin) (ns-auto-titlebar-mode))
 
 ;(add-hook 'term-mode-hook
 ;          (lambda () (color-theme-buffer-local drn-theme (current-buffer))))

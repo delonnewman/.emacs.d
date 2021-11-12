@@ -64,6 +64,7 @@
     tide
     js2-mode
     skewer-mode
+    prettier-js
 
     ;; Julia
     julia-mode
