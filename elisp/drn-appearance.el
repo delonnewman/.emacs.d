@@ -15,17 +15,11 @@
 (set-frame-parameter nil 'background-mode 'dark)
 (enable-theme drn-theme)
 
-;; Show line numbers
-(global-linum-mode)
-
 (column-number-mode t)
 (tool-bar-mode -1)
 
 (when window-system (set-frame-size (selected-frame) 120 80))
 
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
-
-;(add-hook 'term-mode-hook
-;          (lambda () (color-theme-buffer-local drn-theme (current-buffer))))
 
 (provide 'drn-appearance)
