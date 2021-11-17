@@ -16,6 +16,9 @@
     undo-tree
     ag
 
+    ;; Visual
+    powerline
+    
     ;; OS / macOS
     exec-path-from-shell
     ;; osx-lib (see https://github.com/raghavgautam/osx-lib)

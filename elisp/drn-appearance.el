@@ -1,5 +1,6 @@
 (require 'fira-code-mode)
 (require 'ns-auto-titlebar)
+(require 'powerline)
 ;(require 'color-theme-buffer-local)
 
 ;; font
@@ -20,6 +21,10 @@
 
 (when window-system (set-frame-size (selected-frame) 120 80))
 
+;; make titlebar transparent on macOS
 (when (eq system-type 'darwin) (ns-auto-titlebar-mode))
+
+;; load powerline theme
+(powerline-center-evil-theme)
 
 (provide 'drn-appearance)
