@@ -21,7 +21,6 @@
 
 (require 'drn-clojure)
 (require 'drn-ruby)
-(require 'drn-python)
 (require 'drn-javascript)
 
 (require 'server)
