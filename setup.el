@@ -64,10 +64,10 @@
     cider
 
     ;; Common Lisp
-    slime
+    ;; slime
 
     ;; Scheme
-    geiser
+    ;; geiser
 
     ;; Ruby
     yari
@@ -85,7 +85,7 @@
 
     ;; Web Dev
     web-mode
-    rest-client
+    restclient
     impatient-mode
     ;; hyde Jekyll integration (see https://github.com/nibrahim/Hyde)
     
@@ -101,7 +101,7 @@
     julia-mode
 
     ;; Python
-    elpy
+    ;; elpy
     )
   )
 
