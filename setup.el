@@ -8,16 +8,17 @@
 (defvar drn-packages
   '(
     ;; Editor ext.
-    evil
-    diminish
-    dashboard
-    all-the-icons
-    ivy
-    undo-tree
     ag
+    evil
+    dashboard
+    ivy
+    projectile
+    undo-tree
 
     ;; Visual
     powerline
+    diminish
+    all-the-icons
     
     ;; OS / macOS
     exec-path-from-shell
@@ -43,7 +44,6 @@
 
     ;; Programming
     editorconfig
-    projectile
     lsp-mode
     lsp-ui
     rainbow-delimiters
@@ -58,9 +58,9 @@
     docker
 
     ;; Git
-    magit
     forge
     git-gutter
+    magit
 
     ;; Clojure
     clojure-mode
