@@ -43,16 +43,18 @@
     which-key
 
     ;; Programming
+    company
+    company-box
     editorconfig
+    flycheck
+    flycheck-color-mode-line
+    flycheck-popup-tip
+    hl-todo
     lsp-mode
     lsp-ui
     rainbow-delimiters
     rainbow-mode
     smartparens
-    hl-todo
-    flycheck
-    company
-    company-box
 
     ;; Services / devops
     docker
@@ -63,8 +65,8 @@
     magit
 
     ;; Clojure
-    clojure-mode
     cider
+    clojure-mode
 
     ;; Common Lisp
     ;; slime
@@ -81,7 +83,6 @@
     ;; ruby-tools (see https://github.com/rejeep/ruby-tools.el)
     ;; ruby-end (see https://github.com/rejeep/ruby-end.el)
     ;; rube (see https://github.com/dgutov/robe)
-
 
     ;; Gehrkin
     feature-mode

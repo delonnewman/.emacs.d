@@ -5,6 +5,7 @@
 (require 'hl-todo)
 (require 'diminish)
 (require 'prodigy)
+(require 'flycheck-color-mode-line)
 
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode) 
 (add-hook 'prog-mode-hook #'smartparens-mode)
@@ -21,6 +22,12 @@
 ;; git gutter
 (global-git-gutter-mode +1)
 (diminish 'git-gutter)
+
+;(eval-after-load "flycheck"
+;  '(add-hook 'flycheck-mode-hook 'flycheck-color-mode-line-mode))
+
+(with-eval-after-load 'flycheck
+  '(add-hook 'flycheck-mode-hook 'flycheck-popup-tip-mode))
 
 ;; use global-display-line-numbers when available, linenum-mode breaks git gutter
 (when (version<= "26.0.6" emacs-version)
