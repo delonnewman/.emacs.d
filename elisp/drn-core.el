@@ -1,3 +1,5 @@
+(require 'cl-lib)
+
 ;; Recent File mode
 (recentf-mode 1)
 
@@ -59,6 +61,14 @@
 (when (fboundp 'set-fontset-font)
   (set-fontset-font t 'unicode "Apple Color Emoji" nil 'prepend))
 
+;; supercharge your undo/redo with undo-tree
+(require 'undo-tree)
+;; autosave the undo-tree history
+(setq undo-tree-history-directory-alist
+      `((".*" . ,temporary-file-directory)))
+(setq undo-tree-auto-save-history t)
+(global-undo-tree-mode)
+(diminish 'undo-tree-mode)
 
 ;;; Colorize output of Compilation Mode, see
 ;;; http://stackoverflow.com/a/3072831/355252
@@ -70,5 +80,30 @@
     (let ((inhibit-read-only t))
       (ansi-color-apply-on-region (point-min) (point-max)))))
 (add-hook 'compilation-filter-hook #'drn-colorize-compilation-buffer)
+
+;; blatenly stolen from prelude
+(defun drn-search (query-url prompt)
+  "Open the search url constructed with the QUERY-URL.
+PROMPT sets the `read-string prompt."
+  (browse-url
+   (concat query-url
+           (url-hexify-string
+            (if mark-active
+                (buffer-substring (region-beginning) (region-end))
+              (read-string prompt))))))
+
+(defmacro drn-install-search-engine (search-engine-name search-engine-url search-engine-prompt)
+  "Given some information regarding a search engine, install the interactive command to search through them"
+  `(defun ,(intern (format "search-%s" search-engine-name)) ()
+       ,(format "Search %s with a query or region if any." search-engine-name)
+       (interactive)
+       (drn-search ,search-engine-url ,search-engine-prompt)))
+
+(drn-install-search-engine "google"     "http://www.google.com/search?q="              "Google: ")
+(drn-install-search-engine "youtube"    "http://www.youtube.com/results?search_query=" "Search YouTube: ")
+(drn-install-search-engine "github"     "https://github.com/search?q="                 "Search GitHub: ")
+(drn-install-search-engine "duckduckgo" "https://duckduckgo.com/?t=lm&q="              "Search DuckDuckGo: ")
+(drn-install-search-engine "wol"        "https://wol.jw.org/en/wol/tl/r1/lp-e?q="      "Search WOL: ")
+(drn-install-search-engine "jworg"      "https://www.jw.org/en/search/?q="             "Search JW.org: ")
 
 (provide 'drn-core)

@@ -9,8 +9,10 @@
 
 (require 'drn-appearance)
 (require 'drn-core)
+(require 'drn-global-keybindings)
 (require 'drn-editor)
 (require 'drn-dashboard)
+(require 'drn-eshell)
 
 (require 'drn-git)
 (require 'drn-programming)
@@ -35,7 +37,7 @@
  '(custom-safe-themes
    '("c74e83f8aa4c78a121b52146eadb792c9facc5b1f02c917e3dbb454fca931223" "3c83b3676d796422704082049fc38b6966bcad960f896669dfc21a7a37a748fa" "b30ab3b30e70f4350dad6bfe27366d573ace2190cc405c619bd5e602110c6e0c" default))
  '(package-selected-packages
-   '(flycheck-popup-tip flycheck-color-mode-line powerline smart-mode-line npm magit all-the-icons dashboard smartparens evil diminish))
+   '(git-timemachine flycheck-popup-tip flycheck-color-mode-line powerline smart-mode-line npm magit all-the-icons dashboard smartparens evil diminish))
  '(safe-local-variable-values
    '((eval prettier-mode t)
      (projectile-globally-ignored-files "*.map")

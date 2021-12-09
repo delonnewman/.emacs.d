@@ -1,0 +1,18 @@
+
+* Julia Support
+  https://pixorblog.wordpress.com/2018/03/07/julia-with-emacs-org-mode/
+  https://sntag.github.io/post/2020-04-13-getting-emacs-and-julia-to-work/
+  https://www.emacswiki.org/emacs/JuliaProgrammingLanguage
+  https://github.com/emacs-ess/ESS/wiki/Julia
+  https://ogbe.net/blog/julia-shell.html
+  https://github.com/dennisog/julia-shell-mode
+  https://discourse.julialang.org/t/emacs-and-julia/4770
+  https://discourse.julialang.org/t/julia-repl-in-emacs/33769
+  https://github.com/gcv/julia-snail
+
+* JavaScript Support
+  https://github.com/abicky/nodejs-repl.el
+
+* Undo config (copy from prelude)
+
+* EShell Config

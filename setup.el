@@ -63,13 +63,14 @@
     forge
     git-gutter
     magit
+    git-timemachine ;; https://github.com/emacsmirror/git-timemachine
 
     ;; Clojure
     cider
     clojure-mode
 
     ;; Common Lisp
-    ;; slime
+    ;; sly
 
     ;; Scheme
     ;; geiser
@@ -85,7 +86,7 @@
     ;; rube (see https://github.com/dgutov/robe)
 
     ;; Gehrkin
-    feature-mode
+    ;; feature-mode
 
     ;; Web Dev
     web-mode
