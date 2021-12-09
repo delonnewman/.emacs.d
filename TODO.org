@@ -13,6 +13,4 @@
 * JavaScript Support
   https://github.com/abicky/nodejs-repl.el
 
-* Undo config (copy from prelude)
-
 * EShell Config
