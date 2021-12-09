@@ -49,6 +49,7 @@
     flycheck
     flycheck-color-mode-line
     flycheck-popup-tip
+    flycheck-projectile
     hl-todo
     lsp-mode
     lsp-ui
@@ -80,7 +81,8 @@
     inf-ruby
     yard-mode
     rspec-mode
-    ;; enhanced-ruby-mode (see https://github.com/zenspider/enhanced-ruby-mode)
+    projectile-rails
+    ;; enh-ruby-mode (see https://github.com/zenspider/enhanced-ruby-mode)
     ;; ruby-tools (see https://github.com/rejeep/ruby-tools.el)
     ;; ruby-end (see https://github.com/rejeep/ruby-end.el)
     ;; rube (see https://github.com/dgutov/robe)

@@ -14,6 +14,7 @@
 ;; Projectile
 (projectile-mode +1)
 (define-key projectile-mode-map (kbd "s-p") 'projectile-command-map)
+(define-key projectile-command-map (kbd "#") 'flycheck-projectile-list-errors)
 (setq projectile-project-search-path '("~/Projects/Personal"
                                        "~/Projects/Business"
                                        "~/Projects/Clients"
