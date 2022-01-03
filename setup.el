@@ -19,6 +19,7 @@
     powerline
     diminish
     all-the-icons
+    visual-fill-columns
     
     ;; OS / macOS
     exec-path-from-shell
@@ -28,6 +29,7 @@
 
     ;; Productivity
     org
+    nov ; epub reader
     
     ;; Writing
     ;; pdf-tools (see https://github.com/vedang/pdf-tools)
@@ -35,7 +37,7 @@
     ;; poet (see https://github.com/kunalb/poet)
 
     ;; Eshell
-    ;; esh-autosuggest (see https://github.com/dieggsy/esh-autosuggest)
+    esh-autosuggest ;; (see https://github.com/dieggsy/esh-autosuggest)
     ;; eshell-prompt-extras (see https://github.com/zwild/eshell-prompt-extras)
     
     ;; Help

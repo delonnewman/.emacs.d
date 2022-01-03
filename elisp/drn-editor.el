@@ -1,4 +1,4 @@
-;;; editor.el --- Editor enhancements
+;;; drn-editor.el --- Editor enhancements
 
 ;; Much has been blatantly stolen from prelude (https://github.com/bbatsov/prelude)
 
