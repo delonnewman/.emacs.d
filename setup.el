@@ -19,7 +19,7 @@
     powerline
     diminish
     all-the-icons
-    visual-fill-columns
+    ;visual-fill-columns
     
     ;; OS / macOS
     exec-path-from-shell
