@@ -4,7 +4,7 @@
 (recentf-mode 1)
 
 ;; Evil
-(evil-mode 1)
+;; (evil-mode 1)
 
 ;; Counsel / Ivy
 ;(global-set-key (kbd "M-x") 'counsel-M-x)

@@ -8,6 +8,12 @@
 ;; Start a new eshell even if one is active.
 (global-set-key (kbd "C-x M") (lambda () (interactive) (eshell t)))
 
+(when (eq system-type 'darwin)
+  (setq mac-control-modifier 'meta)
+  (setq mac-option-modifier 'super)
+  (setq mac-control-modifier 'control)
+  (setq ns-function-modifier 'hyper))
+
 (global-set-key (kbd "C-c C-/ j") 'search-jworg)
 (global-set-key (kbd "C-c C-/ w") 'search-wol)
 (global-set-key (kbd "C-c C-/ h") 'search-github)
